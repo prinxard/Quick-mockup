@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap');
+
+body {
+    font-family: 'Roboto',
+    sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #555; */
+    height: 100vh;
+}
+
+.form-control {
+    margin-top: 18px;
+}
+
+.image-section {
+    max-width: 500px;
+    max-height: 450px;
+}
+
+.image {
+    width: 100%;
+}
+
+.header h1 {
+    color: #0c41a3;
+    font-size: 2.5em;
+}
+.header h2{
+     font-weight: normal;
+     font-size: 2em;
+}
+.light-text{
+    font-weight: lighter;
+}
+.form-container {
+    height: 700px;
+    align-self: center;
+    padding-left: 4%;
+    padding-top: 7rem;
+
+}
+
+.form {
+    padding-top: 4rem;
+}
+
+.form-input {
+    width: 70%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border-left: 10px solid #0c41a3;
+}
+
+.form-input:focus {
+    outline: 0;
+}
+
+.forget-password {
+    padding-left: 4rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.button {
+    cursor: pointer;
+    padding: 10px 10px;
+    height: 2.3rem;
+    width: 6rem;
+    border-radius: 4px;
+
+
+}
+
+.sign-up {
+    color: #0c41a3;
+    background-color: #fff;
+    margin-left: 1.5rem;
+    border: 2px solid #0c41a3
+}
+
+.login {
+    background-color: #3498db;
+    border: 1px solid #3498db;
+    color: #fff;
+    box-shadow: 2px 2px 10px #0c41a3;
+}
