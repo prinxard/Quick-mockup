@@ -35,13 +35,16 @@ body {
 }
 
 .header h1 {
-    color: #0c41a3;
+    color: #067bc9;
     font-size: 2.5em;
+    margin-bottom: 0;
 }
 
 .header h2 {
     font-weight: normal;
     font-size: 2em;
+    margin-top: 0;
+    width: 400px;
 }
 
 .light-text {
@@ -52,7 +55,7 @@ body {
     height: 700px;
     align-self: center;
     padding-left: 4%;
-    padding-top: 7rem;
+    margin-top: 5rem;
 
 }
 
@@ -61,13 +64,13 @@ body {
 }
 
 .form-input {
-    width: 70%;
+    width: 73%;
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 16px;
     padding: 12px 20px 12px 40px;
-    border-left: 10px solid #0c41a3;
+    border-left: 10px solid #067bc9;
 }
 
 .form-input:focus {
@@ -75,7 +78,7 @@ body {
 }
 
 .forget-password {
-    padding-left: 4rem;
+    padding-left: 2rem;
     text-decoration: none;
     color: inherit;
 }
@@ -86,20 +89,18 @@ body {
     height: 2.3rem;
     width: 6rem;
     border-radius: 4px;
-
-
 }
 
 .sign-up {
-    color: #0c41a3;
+    color: #067bc9;
     background-color: #fff;
     margin-left: 1.5rem;
-    border: 2px solid #0c41a3
+    border: 2px solid #067bc9
 }
 
 .login {
-    background-color: #3498db;
-    border: 1px solid #3498db;
+    background-color: #067bc9;
+    border: 1px solid #067bc9;
     color: #fff;
-    box-shadow: 2px 2px 10px #0c41a3;
+    box-shadow: 2px 2px 10px #067bc9;
 }
