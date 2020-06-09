@@ -78,6 +78,11 @@ body {
     outline: 0;
 }
 
+::placeholder{
+    font-size: smaller;
+    font-weight: lighter;
+}
+
 .forget-password {
     padding-left: 2rem;
     text-decoration: none;
