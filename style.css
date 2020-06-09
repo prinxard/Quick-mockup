@@ -26,8 +26,9 @@ body {
 }
 
 .image-section {
-    max-width: 500px;
-    max-height: 450px;
+    max-width: 600px;
+    max-height: 550px;
+    margin-bottom: 10rem;
 }
 
 .image {
