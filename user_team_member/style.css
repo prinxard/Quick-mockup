@@ -1,0 +1,12 @@
+
+*{
+    box-sizing: border-box;
+}
+.avatar{
+     height: 45px;
+     width: 45px;
+}
+.developer-img{
+    height: inherit;
+    width: inherit;
+}
