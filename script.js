@@ -14,22 +14,22 @@ $(document).ready(function () {
 
         } else {
             $.ajax({
-                type: 'POST',
-                url: "https://reqres.in/api/login",
-                data: {
-                    email: email_input,
-                    password: password_input
-                },
-                success: (function (data) {
+                    type: 'POST',
+                    url: "https://reqres.in/api/login",
+                    data: {
+                        email: email_input,
+                        password: password_input
+                    },
+                    dataType: 'json',
+                })
+                .done(function () {
                     $(location).attr('href', './user_team_member/memberpage.html')
-                }),
-                 error: function () {
-                     $('.form-input').css('border', 'solid 1px #800000')
-                     $('.error-msg').text('Invalid login credentials!')
+                })
+                .fail(function () {
+                    $('.form-input').css('border', 'solid 1px #800000')
+                    $('.error-msg').text('Invalid login credentials!')
 
-                 },
-                dataType: 'json',
-            })
+                })
 
         }
 

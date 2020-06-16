@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Open Sans',
+        sans-serif;
+}
+
 .avatar {
     height: 45px;
     width: 45px;
@@ -16,12 +21,15 @@
     min-height: 100vh;
     background-color: #6336b5;
 }
-#drop{
+
+#drop {
     display: inline;
 }
-#drop:hover{
+
+#drop:hover {
     cursor: pointer;
 }
+
 .tmember {
     border-radius: 10px;
     border: solid 1px #6336b5;
@@ -37,15 +45,13 @@
 }
 
 .tmember-email {
-    width: 10rem;
+    width: 13rem;
     height: 4.375rem;
-}
-.tmember-name{
-    width: 4.9375rem;
-    height: 4.4375rem
 }
 
 .tmember-name {
     color: #2c2f36;
     font-weight: bold;
+    width: 5.5rem;
+    height: 4.4375rem
 }

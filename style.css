@@ -69,11 +69,11 @@ body {
 }
 
 .form-input:focus {
-    outline: 0;
+  outline-color: rgba(6, 123, 201);
+   /* box-shadow: 2px 2px 2px #067bc9; */
 }
 
 .form-input {
-    /* width: 73%; */
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -83,8 +83,9 @@ body {
 }
 
 ::placeholder {
-    font-size: smaller;
-    font-weight: lighter;
+   font-size: 10px;
+   letter-spacing: 1px;
+   color:#a5aeb7;
 }
 
 .forget-password {
