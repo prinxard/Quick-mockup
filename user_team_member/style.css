@@ -1,12 +1,13 @@
-
-*{
+* {
     box-sizing: border-box;
 }
-.avatar{
-     height: 45px;
-     width: 45px;
+
+.avatar {
+    height: 45px;
+    width: 45px;
 }
-.developer-img{
+
+.developer-img {
     height: inherit;
     width: inherit;
 }
@@ -14,4 +15,13 @@
 #main-content {
     min-height: 100vh;
     max-height: auto;
+    background-color: #6336b5;
+}
+
+.tmember {
+    border-radius: 10px;
+    border: solid 1px #6336b5;
+    background-color: honeydew;
+    border-bottom-width: 10px;
+    border-top-right-radius: 15px;
 }
