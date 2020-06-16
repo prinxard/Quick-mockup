@@ -1,21 +1,21 @@
 $(document).ready(function () {
-    var $card1 = $('.card1')
-      $.ajax({
-          type: 'GET',
-          url: "https://reqres.in/api/users?page=1",
-          success: (function (members) {
-              $.each(members.data, function (i, data) {
-                  
-                  $('#tmembers').append("<tr class='tmember'>" + 
-                      `<td class='tmember-avatar'> <img src= ${data.avatar} class='rounded-circle avatar'>  </img> </td>` +
-                      `<td class='tmember-name'> ${data.first_name} </td>`+
-                      `<td class='tmember-email'> ${data.email} </td>`+
-                      `<td class='tmember-position'> Developer  </td>`+
-                      `<td class='tmember-status'> <button class='btn btn-primary'>  Activated  </button>  </td>` +
-                      `<td class='icons'> <img src=${'./images/icons8-settings-16.png'}>  </img> <img src=${'./images/icons8-sort-down-16.png'}>   </img> </td>`         
-                  +"</tr>")
-              })
-          }),
-          dataType: 'json',
-      })
-}) 
+
+    $.ajax({
+        type: 'GET',
+        url: "https://reqres.in/api/users?page=1",
+        success: (function (members) {
+            $.each(members.data, function (i, data) {
+
+                $('#tmembers').append("<tr class='tmember d-flex justify-content-between'>" +
+                    `<td class='tmember-avatar'><img src= ${data.avatar} class='rounded-circle avatar'></img></td>` +
+                    `<td class='tmember-name'>${data.first_name}</td>` +
+                    `<td class='tmember-email'>${data.email}</td>` +
+                    `<td class='tmember-position'>Developer</td>` +
+                    `<td class='tmember-status'><button class='btn btn-success'>Activated</button></td>` +
+                    `<td class='icons' id='toggle'> <img src=${'./images/icons8-settings-16.png'}>  </img> <div class='dropdown' id='drop'><img src=${'./images/icons8-sort-down-16.png'} class=" dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></img><div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div></div> </td>` +
+                    "</tr>")
+            })
+        }),
+        dataType: 'json',
+    })
+})

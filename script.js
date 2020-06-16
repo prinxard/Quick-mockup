@@ -9,7 +9,7 @@ $(document).ready(function () {
 
         if ((!pattern.test(email_input)) || (password_input).length === 0 || (email_input).length === 0) {
             $('.form-input').css('border', 'solid 1px #800000')
-            $('.error-msg').text('Invalid login credentials!')
+            $('.error-msg').text('Email or Password is incorrect!')
 
 
         } else {
@@ -23,8 +23,10 @@ $(document).ready(function () {
                 success: (function (data) {
                     $(location).attr('href', './user_team_member/memberpage.html')
                 }),
-                 error: function (request, status, error) {
-                     alert(request.responseText);
+                 error: function () {
+                     $('.form-input').css('border', 'solid 1px #800000')
+                     $('.error-msg').text('Invalid login credentials!')
+
                  },
                 dataType: 'json',
             })
@@ -33,6 +35,5 @@ $(document).ready(function () {
 
 
     });
-
 
 })

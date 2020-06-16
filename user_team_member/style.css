@@ -14,14 +14,38 @@
 
 #main-content {
     min-height: 100vh;
-    max-height: auto;
     background-color: #6336b5;
 }
-
+#drop{
+    display: inline;
+}
+#drop:hover{
+    cursor: pointer;
+}
 .tmember {
     border-radius: 10px;
     border: solid 1px #6336b5;
-    background-color: honeydew;
-    border-bottom-width: 10px;
-    border-top-right-radius: 15px;
+    background-color: #f2f2f2;
+    margin-bottom: 0.5rem;
+}
+
+.tmember-email,
+.tmember-position {
+    color: #676c7b;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.tmember-email {
+    width: 10rem;
+    height: 4.375rem;
+}
+.tmember-name{
+    width: 4.9375rem;
+    height: 4.4375rem
+}
+
+.tmember-name {
+    color: #2c2f36;
+    font-weight: bold;
 }
