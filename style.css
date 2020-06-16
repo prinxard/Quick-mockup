@@ -64,10 +64,8 @@ body {
     padding-top: 4rem;
 }
 
-
-
 .error-msg{
-    color: #930b0b;
+    color: #8B0000;
 }
 .form-input:focus {
     outline: 0;

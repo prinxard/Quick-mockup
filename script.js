@@ -1,42 +1,38 @@
 $(document).ready(function () {
-    // alert('hello')
 
     $('#log-in').click(function (event) {
-
+        event.preventDefault();
         var email_input = $('.email').val()
         var password_input = $('.password').val()
         var pattern = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i;
 
 
         if ((!pattern.test(email_input)) || (password_input).length === 0 || (email_input).length === 0) {
+            $('.form-input').css('border', 'solid 1px #800000')
+            $('.error-msg').text('Invalid login credentials!')
 
-            
-            $('.error-msg').text('invalid cred')
-            event.preventDefault();
 
         } else {
             $.ajax({
-                url: "https://reqres.in/api/users",
-
+                type: 'POST',
+                url: "https://reqres.in/api/login",
                 data: {
                     email: email_input,
                     password: password_input
                 },
-
+                success: (function (data) {
+                    $(location).attr('href', './user_team_member/memberpage.html')
+                }),
+                 error: function (request, status, error) {
+                     alert(request.responseText);
+                 },
                 dataType: 'json',
+            })
 
-                type: 'POST',
-
-                success: function () {
-                    window.location = './user_team_member/index.html';
-                }
-
-            });
         }
 
 
     });
-
 
 
 })
