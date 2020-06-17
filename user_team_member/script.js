@@ -12,7 +12,7 @@ $(document).ready(function () {
 
                 $('#tmembers').append("<tr class='tmember d-flex justify-content-between'>" +
                     `<td class='tmember-avatar pl-4'><img src= ${data.avatar} class='rounded-circle avatar'></img></td>` +
-                    `<td class='tmember-name'>${data.first_name}</td>` +
+                    `<td class='tmember-name'>${data.first_name} ${data.last_name}</td>` +
                     `<td class='tmember-email'>${data.email}</td>` +
                     `<td class='tmember-position'>Developer</td>` +
                     `<td class='tmember-status'><button class='btn btn-success'>Activated</button></td>` +
