@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-    //preloader effect
     var Body = $('body');
     Body.addClass('preloader-site');
     $(window).on('load', function () {
@@ -10,7 +9,7 @@ $(document).ready(function () {
 
     $.ajax({
             type: 'GET',
-            url: "https://reqres.in/api/users?page=1",
+            url: "https://reqres.in/api/users?page=2",
             dataType: 'json',
         })
         .done(function (members) {
@@ -31,5 +30,6 @@ $(document).ready(function () {
             var errorMessage = xhr.status + ': ' + xhr.statusText
             alert('Error - ' + errorMessage);
         })
-    $('.page1').addClass('active')
+
+    $('.page2').addClass('active')
 });
