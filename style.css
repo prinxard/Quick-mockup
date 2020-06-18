@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap');
-
 body {
-    font-family: 'Roboto',
+    font-family: 'Open Sans',
         sans-serif;
 }
 
@@ -23,6 +21,7 @@ body {
 
 .form-control {
     margin-top: 18px;
+    position: relative;
 }
 
 .image-section {
@@ -49,7 +48,7 @@ body {
 }
 
 .light-text {
-    font-weight: lighter;
+  color:#a5aeb7;
 }
 
 .form-container {
@@ -64,8 +63,17 @@ body {
     padding-top: 4rem;
 }
 
+.error-msg {
+    color: #8B0000;
+    display: block;
+    margin-top: 1.5rem;
+}
+
+.form-input:focus {
+  outline-color: rgba(6, 123, 201);
+}
+
 .form-input {
-    width: 73%;
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -74,34 +82,48 @@ body {
     border-left: 10px solid #067bc9;
 }
 
-.form-input:focus {
-    outline: 0;
+.email-password-place{
+    position: absolute;
+    font-size:10px;
+    top: 0;
+    left: 30px;
+    padding: 7px 0 0 24px;
+    color: #a5aeb7;
 }
 
-::placeholder{
-    font-size: smaller;
-    font-weight: lighter;
+input[type=text],
+input[type=password] {
+    padding-top: 20px;
+    font-size: 15px;
+    color: #067bc9;
 }
+
 
 .forget-password {
-    padding-left: 2rem;
+    padding-left: 1rem;
     text-decoration: none;
-    color: inherit;
+    color: #a5aeb7;
 }
 
 .button {
     cursor: pointer;
-    padding: 10px 10px;
-    height: 2.3rem;
+    padding: 7px 10px;
+    height: 2.1rem;
     width: 6rem;
     border-radius: 4px;
+    outline: 0;
 }
 
 .sign-up {
     color: #067bc9;
     background-color: #fff;
-    margin-left: 1.5rem;
+    margin-left: 0.7rem;
     border: 2px solid #067bc9
+}
+
+.sign-up:hover {
+    background-color: #067bc9;
+    color: #fff;
 }
 
 .login {
